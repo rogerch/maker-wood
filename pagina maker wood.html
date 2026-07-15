@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Galería Móvil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 15px;
+            flex: 1;
+        }
+
+        .imagen-tarjeta {
+            background-color: #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            aspect-ratio: 1 / 1; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .imagen-tarjeta img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        footer {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+        }
+
+        .redes-sociales {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn-social {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: transform 0.2s;
+        }
+
+        .btn-social:active {
+            transform: scale(0.95);
+        }
+
+        .facebook {
+            background-color: #0c5dc7;
+        }
+
+        .instagram {
+            background-color: #fd4885;
+        }
+
+        .whatsapp {
+            background-color: #14c555;
+        }
+    </style>
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1582240200124154');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1582240200124154&ev=PageView&noscript=1"
+/></noscript>
+</head>
+<body>
+
+    <header>
+        <h1>Maker Wood</h1>
+    </header>
+
+    <main class="galeria">
+        
+        <div class="imagen-tarjeta">
+            <img src="imagen1.png" alt="Imagen1">
+        </div>
+        
+        <div class="imagen-tarjeta">
+            <img src="imagen2.png" alt="Imagen2">
+        </div>
+        
+        <div class="imagen-tarjeta">
+            <img src="imagen3.png" alt="Imagen3">
+        </div>
+        
+        <div class="imagen-tarjeta">
+            <img src="imagen4.png" alt="Imagen4">
+        </div>
+        
+        <div class="imagen-tarjeta">
+            <img src="imagen5.png" alt="Imagen5">
+        </div>
+        
+        <div class="imagen-tarjeta">
+            <img src="imagen6.png" alt="Imagen6">
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Sígueme en mis redes:</p>
+        <div class="redes-sociales">
+            
+            <a href="https://www.facebook.com/profile.php?id=61591647793943#" target="_blank" class="btn-social facebook">
+                Facebook
+            </a>
+
+            <a href="https://www.instagram.com/maker_wood_sjc" target="_blank" class="btn-social instagram">
+                Instagram
+            </a>
+
+            <a href="https://wa.me/message/WEYRMUVAQLTZM1?src=qr" target="_blank" class="btn-social whatsapp">
+                WhatsApp
+            </a>
+
+        </div>
+    </footer>
+
+</body>
+</html>
